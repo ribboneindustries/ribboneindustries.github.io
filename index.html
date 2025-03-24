@@ -4,23 +4,106 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+
+    <title>Rib Bone Industries</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="assets/master.css">
   </head>
 
   <body>
-    <div class="h-dvh">
-      <div
-        class="bg-[url(./img/background.jpg)] bg-fixed bg-center bg-no-repeat bg-cover bg-slate-500 bg-blend-multiply h-dvh text-center text-white">
-        <span class="inline-flex items-baseline">
-          <img src="./img/logo.png" alt="" class="self-center w-5 h-5 rounded-full mx-1" />
+    <!-- WELCOME SECTION -->
+    <div class="bg-[url(./img/background.jpg)] bg-fixed bg-center bg-cover bg-gray-500 bg-blend-multiply h-dvh">
+      <div class="text-center text-white">
+        <span class="inline-flex items-baseline my-4">
+          <img src="./img/logo.png" alt="Rib Bone Industries logo" class="self-center h-5 mr-3 mb-0 pb-0" />
           <span class="nav-header">Rib Bone Industries</span>
         </span>
         <div>
-          <div class="container mx-auto">
-            <h1 class="text-9xl">Let's create something awesome together.</h1>
+          <div class="flex h-screen">
+            <div class="container mx-auto m-auto">
+              <h1 class="text-6xl md:text-8xl lg:text-9xl tagline-offset">Let's create something awesome together.</h1>
+            </div>
           </div>
         </div>
+      </div>
+    </div>
+
+    <!-- INTRODUCTION SECTION -->
+    <div class="container mx-auto my-16 grid md:grid-cols-2 md:gap-4">
+      <div class="px-4 md:px-4">
+        <h1 class="text-6xl md:text-7xl mb-4">We're here to bring your ideas to life.</h1>
+        <p class="mb-4">We bring your ideas to life with high-quality 3D printing services tailored to your needs.
+          Whether you need
+          a custom prototype, a unique gift, or a personalized design, we’re here to make it happen. Our precision
+          printing ensures every detail is captured, bringing your vision to reality with accuracy and durability.
+          From product development to artistic creations, we help individuals and businesses turn concepts into
+          tangible objects. Not sure where to start? We can guide you through the design and printing process to
+          ensure the best results. With a variety of materials and finishes available, your project can be as
+          functional or artistic as you envision. Whether you have a ready-to-print file or need help refining your
+          idea, we’re here to support you every step of the way. Let’s collaborate and create something amazing
+          together!</p>
+      </div>
+      <div class="px-4 md:px-4">
+        <img src="img/image-1.png" class="img-fluid" />
+      </div>
+    </div>
+
+    <!-- SERVICES SECTION -->
+    <div class="container mx-auto mb-16">
+      <div
+        class="bg-[url(./img/image-2.jpg)] bg-fixed bg-center bg-cover bg-gray-500 bg-blend-multiply rounded-md py-8 mx-4">
+        <div class="text-center text-white mx-4">
+          <h1 class="text-6xl md:text-7xl mb-4">Let's partner up!</h1>
+          <div class="md:columns-3">
+            <div class="border border-white rounded-md p-4 mb-4 md:mb-0">
+              <h2 class="text-3xl pb-2">Prototyping</h2>
+              <hr class="pb-2" />
+              <p>Quickly transform ideas into functional prototypes, perfect for testing, refining, and bringing
+                products quickly to market.</p>
+            </div>
+            <div class="border border-white rounded-md p-4 mb-4 md:mb-0">
+              <h2 class="text-3xl pb-2">Designing</h2>
+              <hr class="pb-2" />
+              <p>Create or refine 3D models with expert design services, ensuring your concept is optimized for printing
+                and functionality.</p>
+            </div>
+            <div class="border border-white rounded-md p-4 mb-4 md:mb-0">
+              <h2 class="text-3xl pb-2">Printing</h2>
+              <hr class="pb-2" />
+              <p>Bring your designs to life with high-quality 3D printing, offering various materials, finishes, and
+                precision for any project.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT US SECTION -->
+    <div class="bg-slate-500 py-16 text-white text-center">
+      <div class="container mx-auto">
+        <h1 class="text-6xl md:text-7xl mb-4">Let's get in touch!</h1>
+        <p class="mx-4">
+          <a href="mailto:ribboneindustries@gmail.com">
+            <i class="fa fa-envelope-o fa-5x mx-4 hover:text-amber-400" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.instagram.com/ribboneindustries" target="_blank">
+            <i class="fa fa-instagram fa-5x mx-4 hover:text-amber-400" aria-hidden="true"></i>
+          </a>
+          <a href="https://paypal.com/biz/profile/ribboneindustries" target="_blank">
+            <i class="fa fa-paypal fa-5x mx-4 hover:text-amber-400" aria-hidden="true"></i>
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <!-- FOOTER SECTION -->
+    <div class="bg-slate-700 py-2 text-white">
+      <div class="container mx-auto">
+        <p class="mx-4">© <script>
+            document.write(new Date().getFullYear())
+          </script> Rib Bone Industries</p>
       </div>
     </div>
   </body>
