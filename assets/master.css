@@ -35,6 +35,19 @@ h6,
   font-size: 24px;
 }
 
+.bg-welcome {
+  background-position: 30% 50%;
+}
+
+.bg-service-sm {
+  background-position: 55% 50%;
+}
+
+.bg-service-md {
+  background-position: 40% 90%;
+}
+
+
 .tagline-offset {
   position: relative;
   display: inline-block;
