@@ -1,32 +1,22 @@
 @font-face {
-  font-family: 'Inter Display Black';
-  src: url(../assets/fonts/inter/InterDisplay-Black.ttf);
-}
-
-@font-face {
-  font-family: 'Inter Display Regular';
-  src: url(../assets/fonts/inter/InterDisplay-Regular.ttf);
-}
-
-@font-face {
-  font-family: 'Gotham Condensed Book';
-  src: url(../assets/fonts/Gotham/GothamNarrow/GothamNarrow-Bold.otf);
+  font-family: 'San Francisco Regular';
+  src: url(../assets/fonts/SanFranciscoRegular.ttf);
 }
 
 @font-face {
   font-family: 'Epilogue Bold';
-  src: url(../assets/fonts/Epilogue/Epilogue-Bold.ttf);
+  src: url(../assets/fonts/Epilogue-Bold.ttf);
 }
 
 body {
-  font-family: 'Inter Display Regular';
+  font-family: 'San Francisco Regular';
 }
 
 .bg-header {
   height: 100vh;
   background-image: url("../img/background.jpg");
-  background-position: center;
-  background-attachment: fixed;
+  /* background-position: center;
+  background-attachment: fixed; */
   background-size: cover;
   color: rgb(255, 255, 255);
   min-height: 100vh;
@@ -37,31 +27,32 @@ body {
   background-blend-mode: multiply;
 }
 
-.navbar-brand {
+.navbar-brand, .navbar-brand:hover {
   color: rgb(255, 255, 255);
+  font-size: 36px;
 }
 
 .brand-spacing {
   margin-right: 8px;
 }
 
-.nav-fa {
-  color: rgb(255, 255, 255);
-  font-size: 30px;
+.headline {
+  align-items: center;
+  display: flex;
 }
 
 .line-headline {
   font-family: "Epilogue Bold";
-  line-height: 1;
+  line-height: 1em;
 }
 
 @media only screen and (max-width: 575px) {
   .line-headline {
-    font-size: 4.25rem;
+    font-size: 3.6rem;
   }
 
   .container {
-    max-width: 100%;
+    max-width: 560px;
   }
 }
 
@@ -77,7 +68,7 @@ body {
 
 @media only screen and (min-width: 768px) {
   .line-headline {
-    font-size: 5rem;
+    font-size: 7rem;
   }
 
   .container {
