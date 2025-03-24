@@ -9,21 +9,33 @@
 }
 
 @font-face {
-  font-family: "San Francisco Regular";
-  src: url(../assets/fonts/SanFranciscoRegular.ttf);
+  font-family: "Poppins Regular";
+  src: url(../assets/fonts/PoppinsRegular.ttf);
 }
 
 body {
-  font-family: "San Francisco Regular";
+  font-family: "Poppins Regular";
   font-size: 20px;
   background-color: rgb(220, 220, 220);
 }
 
-h1, h2, h3, h4, h5, h6, .brand {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.brand {
   font-family: "Epilogue Bold";
 }
 
 .nav-header {
   font-family: "Epilogue Regular";
   font-size: 24px;
+}
+
+.tagline-offset {
+  position: relative;
+  display: inline-block;
+  bottom: 68px;
 }
