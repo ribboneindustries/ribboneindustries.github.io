@@ -13,11 +13,16 @@
   src: url(../assets/fonts/Gotham/GothamNarrow/GothamNarrow-Bold.otf);
 }
 
+@font-face {
+  font-family: 'Epilogue Bold';
+  src: url(../assets/fonts/Epilogue/Epilogue-Bold.ttf);
+}
+
 body {
   font-family: 'Inter Display Regular';
 }
 
-.bg {
+.bg-header {
   height: 100vh;
   background-image: url("../img/background.jpg");
   background-position: center;
@@ -25,8 +30,6 @@ body {
   background-size: cover;
   color: rgb(255, 255, 255);
   min-height: 100vh;
-  align-items: flex-end;
-  display: flex;
 }
 
 .bg-tint {
@@ -34,59 +37,80 @@ body {
   background-blend-mode: multiply;
 }
 
+.navbar-brand {
+  color: rgb(255, 255, 255);
+}
+
 .brand-spacing {
   margin-right: 8px;
 }
 
 .nav-fa {
-  color: rgb(210, 210, 210);
+  color: rgb(255, 255, 255);
   font-size: 30px;
 }
 
 .line-headline {
-  font-family: "Gotham Condensed Book";
+  font-family: "Epilogue Bold";
   line-height: 1;
 }
 
-.line-description {
-  font-size: 24px;
-}
-
-.pb-max {
-  padding-bottom: 48px;
-}
-
-/* Extra small devices such as small phones (280px and up) */
-@media only screen and (min-width: 280px) {
+@media only screen and (max-width: 575px) {
   .line-headline {
     font-size: 4.25rem;
   }
+
+  .container {
+    max-width: 100%;
+  }
 }
 
-/* Small devices such as large phones (640px and up) */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 576px) {
+  .line-headline {
+    font-size: 4.25rem;
+  }
+
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
   .line-headline {
     font-size: 5rem;
   }
-}
 
-/* Medium devices such as tablets (768px and up) */
-@media only screen and (min-width: 768px) {
-  .line-headline {
-    font-size: 7rem;
+  .container {
+    max-width: 720px;
   }
 }
 
-/* Large devices such as laptops (1024px and up) */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 992px) {
+  .line-headline {
+    font-size: 6rem;
+  }
+
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .line-headline {
+    font-size: 6rem;
+  }
+
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
   .line-headline {
     font-size: 9rem;
   }
-}
 
-/* Largest devices such as desktops (1280px and up) */
-@media only screen and (min-width: 1280px) {
-  .line-headline {
-    font-size: 10.5rem;
+  .container {
+    max-width: 1400px;
   }
 }
